@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include_once 'C:\xampp\htdocs\bd\conexion.php';
+include_once 'C:\XAMPP\htdocs\bd\conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 

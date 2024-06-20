@@ -1,0 +1,19 @@
+create database prueba;
+CREATE TABLE tarea (
+    idTarea int PRIMARY KEY AUTO_INCREMENT,
+    Titulo varchar(100),
+    Descripcion varchar(100),
+    Fecha datetime
+);
+
+CREATE PROCEDURE spMostrar_Tareas()
+select * from tarea;
+
+CREATE PROCEDURE spInsertar_Tarea(_Titulo varchar(100),_Descripcion varchar(100),_Fecha varchar(100))
+insert into tarea(Titulo,Descripcion,Fecha)
+values(_Titulo,_Descripcion ,_Fecha);
+
+
+CREATE PROCEDURE spBuscar_Tarea(Texto varchar(100))
+select * from tarea t 
+where t.Descripcion=Texto;
