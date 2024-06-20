@@ -1,0 +1,7 @@
+.texto-seleccionado {
+    font-size: 80px; /* Ajusta el tamaño de fuente según tus necesidades */
+    width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    max-height: 100px; /* Ajusta la altura máxima según tus necesidades */
+    white-space: normal;
+  word-wrap: break-word;
+  }
