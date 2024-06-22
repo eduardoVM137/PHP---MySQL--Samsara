@@ -30,7 +30,7 @@ $('#formLogin').submit(function(e){
                    }).then((result) => {
                        if(result.value){
                            if($.trim($("#usuario").val())=="admin"||$.trim($("#usuario").val())=="ADMIN"){
-                            window.location.href = 'dashboard/index.php';
+                            window.location.href = './Aplicacion/index.php';
                            }
                            else{
                             window.location.href =  "vistas/pag_inicio.php"

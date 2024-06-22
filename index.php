@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Login</title>
 
-        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./estilos.css">
-        <link rel="stylesheet" href="./plugins/sweetalert2/sweetalert2.min.css">        
+        <link rel="stylesheet" href="Librerias/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="Librerias/plugins/sweetalert2/sweetalert2.min.css">        
         
-        <link rel="stylesheet" type="text/css" href="./fuentes/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="Librerias/fuentes/iconic/css/material-design-iconic-font.min.css">
         
     </head>
     
@@ -42,11 +42,11 @@
         </div>
     </div>     
         
-    <script src="jquery/jquery-3.3.1.min.js"></script>    
-     <script src="bootstrap/js/bootstrap.min.js"></script>    
-     <script src="popper/popper.min.js"></script>    
+    <script src="Librerias/jquery/jquery-3.3.1.min.js"></script>    
+     <script src="Librerias/bootstrap/js/bootstrap.min.js"></script>    
+     <script src="Librerias/popper/popper.min.js"></script>    
         
-     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
+     <script src="Librerias/plugins/sweetalert2/sweetalert2.all.min.js"></script>    
      <script src="codigo.js"></script>    
     </body>
 </html>
