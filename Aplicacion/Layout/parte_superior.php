@@ -23,18 +23,21 @@ if($_SESSION["s_usuario"] === null){
   <!-- Custom fonts for this template-->
   <link href="Recursos/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="../Librerias/plugins/sweetalert2/sweetalert2.min.css">
-  <script src="../Librerias/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="Librerias/plugins/sweetalert2/sweetalert2.min.css">
+  <script src="Librerias/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+  <!-- Incluyendo jQuery antes de cualquier otro script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="Recursos/css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!--datables CSS básico-->
-    <link rel="stylesheet" type="text/css" href="Recursos/vendor/datatables/datatables.min.css"/>
-    <!--datables estilo bootstrap 4 CSS-->  
-    <link rel="stylesheet"  type="text/css" href="Recursos/vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">      
+  <!--datables CSS básico-->
+  <link rel="stylesheet" type="text/css" href="Recursos/vendor/datatables/datatables.min.css"/>
+  <!--datables estilo bootstrap 4 CSS-->  
+  <link rel="stylesheet"  type="text/css" href="Recursos/vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">      
     
 </head>
 
@@ -94,9 +97,6 @@ if($_SESSION["s_usuario"] === null){
         </div>
       </li>
 
-
-    
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -122,32 +122,8 @@ if($_SESSION["s_usuario"] === null){
             <i class="fa fa-bars"></i>
           </button>
 
-         
-
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-
-       
 
             <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -155,12 +131,10 @@ if($_SESSION["s_usuario"] === null){
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION["s_usuario"];?></span>
-<!--                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">-->
                 <img class="img-profile rounded-circle" src="Recursos/img/user.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-           
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -171,4 +145,5 @@ if($_SESSION["s_usuario"] === null){
 
           </ul>
 
-        </nav> 
+        </nav>
+<?php // Aquí termina el contenido de parte_superior.php ?>
